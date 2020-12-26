@@ -1,0 +1,211 @@
+{
+"skeleton": {
+	"hash": "sWzTiyBAChtOEhvOTgFj1IlQfdY",
+	"spine": "3.8.99",
+	"y": 0.02,
+	"width": 1024.04,
+	"height": 575.98,
+	"images": "",
+	"audio": "C:/onedrive/workspace/libGDX Jam December 2020/design/output"
+},
+"bones": [
+	{ "name": "root", "x": 3.34 },
+	{ "name": "ray3k-background", "parent": "root", "length": 513.15, "rotation": 0.18, "x": 519.08, "y": 276.54 },
+	{ "name": "ray3k-zebra", "parent": "root", "length": 219.45, "x": 540.53, "y": 241.89 },
+	{ "name": "ray3k-title", "parent": "root", "length": 293.74, "rotation": 0.97, "x": 479.48, "y": 428.34 },
+	{ "name": "ray3k-flare", "parent": "root", "length": 371.25, "rotation": 0.25, "x": 500.93, "y": 461.34 }
+],
+"slots": [
+	{ "name": "clip", "bone": "root", "attachment": "clip" },
+	{ "name": "ray3k-background", "bone": "ray3k-background", "attachment": "ray3k-background" },
+	{ "name": "ray3k-title", "bone": "ray3k-title", "attachment": "ray3k-title" },
+	{ "name": "ray3k-zebra", "bone": "ray3k-zebra" },
+	{ "name": "logo/white", "bone": "root", "color": "000000ff", "attachment": "logo/white" },
+	{ "name": "ray3k-flare", "bone": "ray3k-flare", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"clip": {
+				"clip": {
+					"type": "clipping",
+					"end": "clip",
+					"vertexCount": 4,
+					"vertices": [ -3.34, 0.03, -3.34, 575.98, 1020.7, 575.99, 1020.65, 0.02 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"logo/white": {
+				"logo/white": { "x": 508.66, "y": 288, "scaleX": 1024, "scaleY": 576, "width": 1, "height": 1 }
+			},
+			"ray3k-background": {
+				"ray3k-background": { "path": "logo/ray3k-background", "x": -7.04, "y": 11.49, "rotation": -0.18, "width": 1024, "height": 576 }
+			},
+			"ray3k-flare": {
+				"ray3k-flare": { "path": "logo/ray3k-flare", "x": 6.59, "y": -3.33, "rotation": -0.25, "width": 2060, "height": 2060 }
+			},
+			"ray3k-title": {
+				"ray3k-title": { "path": "logo/ray3k-title", "x": -4.89, "y": 3.38, "rotation": -0.97, "width": 454, "height": 172 }
+			},
+			"ray3k-zebra": {
+				"ray3k-zebra": { "path": "logo/ray3k-zebra", "x": 11.55, "y": -8.25, "width": 536, "height": 503 }
+			}
+		}
+	}
+],
+"events": {
+	"logo/ray3k song": { "audio": "logo/ray3k song.mp3" }
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"logo/white": {
+				"color": [
+					{ "color": "000000ff" },
+					{ "time": 2.5, "color": "00000000", "curve": "stepped" },
+					{ "time": 16.8333, "color": "00000000" },
+					{ "time": 18.3667, "color": "000000ff" }
+				]
+			},
+			"ray3k-flare": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8, "color": "ffffffff" },
+					{ "time": 9.3333, "color": "ffffff8d" },
+					{ "time": 10.6667, "color": "ffffffff" },
+					{ "time": 12, "color": "ffffff8d" },
+					{ "time": 13.3333, "color": "ffffffff" },
+					{ "time": 14.6667, "color": "ffffff8d" },
+					{ "time": 16, "color": "ffffffff" },
+					{ "time": 16.8333, "color": "ffffff8d" },
+					{ "time": 18.3667, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "ray3k-flare" }
+				]
+			},
+			"ray3k-title": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.0333, "color": "ffffff00" },
+					{ "time": 13.5, "color": "ffffffff" }
+				]
+			},
+			"ray3k-zebra": {
+				"attachment": [
+					{ "name": "ray3k-zebra" }
+				]
+			}
+		},
+		"bones": {
+			"ray3k-flare": {
+				"rotate": [
+					{},
+					{ "time": 4.1333, "angle": 89.75 },
+					{ "time": 8.3667, "angle": 179.75 },
+					{ "time": 13.3, "angle": -90.25 },
+					{ "time": 18.3667, "angle": -0.25 }
+				],
+				"translate": [
+					{ "x": 11.07, "y": -173.34, "curve": "stepped" },
+					{ "time": 2.5, "x": 11.07, "y": -173.34 },
+					{ "time": 8 }
+				],
+				"scale": [
+					{ "x": 5, "y": 5, "curve": "stepped" },
+					{ "time": 2.5, "x": 5, "y": 5 },
+					{ "time": 8 }
+				]
+			},
+			"ray3k-zebra": {
+				"translate": [
+					{ "x": 123.76, "y": -1089.23, "curve": "stepped" },
+					{ "time": 2.5, "x": 123.76, "y": -1089.23 },
+					{ "time": 8, "x": 8.98, "y": -22.51 }
+				],
+				"scale": [
+					{ "x": 5, "y": 5, "curve": "stepped" },
+					{ "time": 2.5, "x": 5, "y": 5 },
+					{ "time": 8 }
+				]
+			},
+			"ray3k-background": {
+				"translate": [
+					{ "x": 29.95 },
+					{ "time": 8, "x": 29.95 },
+					{ "time": 18.3667, "x": 131.52 }
+				],
+				"scale": [
+					{ "x": 5, "y": 5, "curve": "stepped" },
+					{ "time": 2.5, "x": 5, "y": 5 },
+					{ "time": 8, "x": 1.25 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 16.8333,
+				"offsets": [
+					{ "slot": "logo/white", "offset": 1 }
+				]
+			}
+		],
+		"events": [
+			{ "name": "logo/ray3k song" }
+		]
+	},
+	"stand": {
+		"slots": {
+			"ray3k-flare": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "ray3k-flare" }
+				]
+			},
+			"ray3k-title": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ray3k-zebra": {
+				"attachment": [
+					{ "name": "ray3k-zebra" }
+				]
+			}
+		},
+		"bones": {
+			"ray3k-flare": {
+				"translate": [
+					{ "x": 11.07, "y": -173.34 }
+				],
+				"scale": [
+					{ "x": 5, "y": 5 }
+				]
+			},
+			"ray3k-zebra": {
+				"translate": [
+					{ "x": 123.76, "y": -1089.23 }
+				],
+				"scale": [
+					{ "x": 5, "y": 5 }
+				]
+			},
+			"ray3k-background": {
+				"translate": [
+					{ "x": 29.95 }
+				],
+				"scale": [
+					{ "x": 5, "y": 5 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "logo/ray3k song" }
+		]
+	}
+}
+}

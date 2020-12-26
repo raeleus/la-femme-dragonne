@@ -1,0 +1,171 @@
+{
+"skeleton": {
+	"hash": "mRNDmPVpEa8U3ZsrbghktimY5Bo",
+	"spine": "3.8.99",
+	"x": -12,
+	"y": 0.35,
+	"width": 24,
+	"height": 42,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 45.9 }
+],
+"slots": [
+	{ "name": "game/Player_Idle1", "bone": "bone", "attachment": "game/Player_Idle1" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -8.1, 2.2, -7.77, 13.17, 8.03, 13.18, 7.99, 2.18 ]
+				}
+			},
+			"game/Player_Idle1": {
+				"game/Player_Idle1": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle2": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle3": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle4": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle5": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle6": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle7": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle8": { "y": 21.35, "width": 24, "height": 42 },
+				"game/Player_Idle9": { "y": 21.35, "width": 24, "height": 42 }
+			}
+		}
+	}
+],
+"animations": {
+	"east": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle3" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": 9.56 },
+					{ "time": 1 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5, "x": 1.506, "y": 1.506 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"jump": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": 9.56 },
+					{ "time": 1 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5, "x": 1.506, "y": 1.506 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"north": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle5" }
+				]
+			}
+		}
+	},
+	"north-east": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle4" }
+				]
+			}
+		}
+	},
+	"north-west": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle6" }
+				]
+			}
+		}
+	},
+	"pit-death": {
+		"slots": {
+			"game/Player_Idle1": {
+				"color": [
+					{ "color": "ffffffff" },
+					{ "time": 1, "color": "000000ff" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"scale": [
+					{},
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"slide": {
+		"bones": {
+			"bone": {
+				"scale": [
+					{ "y": 0.347 }
+				]
+			}
+		}
+	},
+	"south": {},
+	"south-east": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle2" }
+				]
+			}
+		}
+	},
+	"south-west": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle8" }
+				]
+			}
+		}
+	},
+	"stand": {},
+	"west": {
+		"slots": {
+			"game/Player_Idle1": {
+				"attachment": [
+					{ "name": "game/Player_Idle7" }
+				]
+			}
+		}
+	}
+}
+}

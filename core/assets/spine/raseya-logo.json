@@ -1,0 +1,46 @@
+{
+"skeleton": { "hash": "Xm+R6uYzwBtNYMx6uKEOAv7uU+A", "spine": "3.8.99", "width": 1024, "height": 576, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "raseya-logo/white", "bone": "root", "attachment": "raseya-logo/white" },
+	{ "name": "raseya-logo/raseya-logo", "bone": "root", "attachment": "raseya-logo/raseya-logo" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"raseya-logo/raseya-logo": {
+				"raseya-logo/raseya-logo": { "x": 512, "y": 288, "width": 314, "height": 385 }
+			},
+			"raseya-logo/white": {
+				"raseya-logo/white": { "x": 512, "y": 288, "scaleX": 1024, "scaleY": 576, "width": 1, "height": 1 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"raseya-logo/raseya-logo": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"slots": {
+			"raseya-logo/raseya-logo": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			}
+		}
+	}
+}
+}

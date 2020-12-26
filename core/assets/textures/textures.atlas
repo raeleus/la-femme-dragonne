@@ -1,0 +1,311 @@
+
+textures.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+game/Debug_Map_BASE
+  rotate: false
+  xy: 1, 801
+  size: 558, 713
+  orig: 558, 713
+  offset: 0, 0
+  index: -1
+game/Debug_Map_KEY
+  rotate: false
+  xy: 1, 86
+  size: 558, 713
+  orig: 558, 713
+  offset: 0, 0
+  index: -1
+game/Player_Idle1
+  rotate: false
+  xy: 561, 843
+  size: 23, 39
+  orig: 24, 42
+  offset: 1, 1
+  index: -1
+game/Player_Idle2
+  rotate: false
+  xy: 561, 802
+  size: 20, 39
+  orig: 24, 42
+  offset: 2, 1
+  index: -1
+game/Player_Idle3
+  rotate: false
+  xy: 803, 1434
+  size: 18, 39
+  orig: 24, 42
+  offset: 2, 1
+  index: -1
+game/Player_Idle4
+  rotate: false
+  xy: 1, 1
+  size: 21, 39
+  orig: 24, 42
+  offset: 2, 1
+  index: -1
+game/Player_Idle5
+  rotate: false
+  xy: 803, 1475
+  size: 23, 39
+  orig: 24, 42
+  offset: 1, 1
+  index: -1
+game/Player_Idle6
+  rotate: false
+  xy: 27, 45
+  size: 21, 39
+  orig: 24, 42
+  offset: 2, 1
+  index: -1
+game/Player_Idle7
+  rotate: false
+  xy: 828, 1475
+  size: 18, 39
+  orig: 24, 42
+  offset: 5, 1
+  index: -1
+game/Player_Idle8
+  rotate: false
+  xy: 586, 843
+  size: 20, 39
+  orig: 24, 42
+  offset: 3, 1
+  index: -1
+game/Player_Idle9
+  rotate: false
+  xy: 1, 42
+  size: 24, 42
+  orig: 24, 42
+  offset: 0, 0
+  index: -1
+game/Template_Map_1
+  rotate: false
+  xy: 561, 884
+  size: 240, 630
+  orig: 240, 630
+  offset: 0, 0
+  index: -1
+
+textures2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+logo/b
+  rotate: false
+  xy: 1660, 379
+  size: 41, 52
+  orig: 46, 58
+  offset: 2, 3
+  index: -1
+logo/b-venom
+  rotate: false
+  xy: 1703, 379
+  size: 41, 52
+  orig: 56, 76
+  offset: 9, 10
+  index: -1
+logo/b-venom_1
+  rotate: true
+  xy: 1784, 392
+  size: 39, 4
+  orig: 41, 5
+  offset: 1, 0
+  index: -1
+logo/d
+  rotate: true
+  xy: 1552, 365
+  size: 66, 52
+  orig: 73, 56
+  offset: 4, 2
+  index: -1
+logo/g
+  rotate: true
+  xy: 1606, 365
+  size: 66, 52
+  orig: 71, 57
+  offset: 3, 2
+  index: -1
+logo/i
+  rotate: false
+  xy: 1746, 379
+  size: 17, 52
+  orig: 26, 58
+  offset: 5, 2
+  index: -1
+logo/l
+  rotate: false
+  xy: 1765, 379
+  size: 17, 52
+  orig: 28, 56
+  offset: 6, 2
+  index: -1
+logo/ray3k-background
+  rotate: false
+  xy: 1, 1
+  size: 1024, 576
+  orig: 1024, 576
+  offset: 0, 0
+  index: -1
+logo/ray3k-flare
+  rotate: false
+  xy: 1, 579
+  size: 2060, 2060
+  orig: 2060, 2060
+  offset: 0, 0
+  index: -1
+logo/ray3k-title
+  rotate: false
+  xy: 1552, 433
+  size: 428, 144
+  orig: 454, 172
+  offset: 13, 14
+  index: -1
+logo/ray3k-zebra
+  rotate: false
+  xy: 1027, 98
+  size: 523, 479
+  orig: 536, 503
+  offset: 13, 12
+  index: -1
+logo/template
+  rotate: false
+  xy: 1982, 514
+  size: 303, 52
+  orig: 310, 60
+  offset: 4, 4
+  index: -1
+logo/web
+  rotate: false
+  xy: 1982, 568
+  size: 433, 9
+  orig: 434, 15
+  offset: 1, 2
+  index: -1
+logo/white
+  rotate: false
+  xy: 1790, 430
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+logo/x
+  rotate: true
+  xy: 2287, 486
+  size: 80, 52
+  orig: 85, 55
+  offset: 2, 2
+  index: -1
+logo/x-spiderman
+  rotate: true
+  xy: 1982, 432
+  size: 80, 52
+  orig: 97, 70
+  offset: 9, 9
+  index: -1
+
+textures3.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+raseya-logo/introduction
+  rotate: true
+  xy: 4, 462
+  size: 314, 385
+  orig: 314, 385
+  offset: 0, 0
+  index: -1
+raseya-logo/raseya-logo
+  rotate: true
+  xy: 391, 462
+  size: 314, 385
+  orig: 314, 385
+  offset: 0, 0
+  index: -1
+raseya-logo/white
+  rotate: false
+  xy: 1, 775
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+
+textures4.png
+size: 512,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button
+  rotate: false
+  xy: 1, 46
+  size: 158, 55
+  orig: 158, 55
+  offset: 0, 0
+  index: -1
+font
+  rotate: false
+  xy: 1, 197
+  size: 505, 74
+  orig: 505, 75
+  offset: 0, 0
+  index: -1
+large
+  rotate: false
+  xy: 1, 273
+  size: 505, 236
+  orig: 505, 237
+  offset: 0, 0
+  index: -1
+scroll
+  rotate: false
+  xy: 476, 170
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+select-box
+  rotate: false
+  xy: 161, 46
+  size: 158, 55
+  orig: 158, 55
+  offset: 0, 0
+  index: -1
+slider
+  rotate: false
+  xy: 321, 97
+  size: 174, 4
+  orig: 174, 4
+  offset: 0, 0
+  index: -1
+slider-knob
+  rotate: false
+  xy: 476, 178
+  size: 6, 17
+  orig: 6, 17
+  offset: 0, 0
+  index: -1
+title
+  rotate: false
+  xy: 1, 103
+  size: 382, 92
+  orig: 463, 108
+  offset: 41, 9
+  index: -1
+white
+  rotate: false
+  xy: 508, 508
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+window
+  rotate: false
+  xy: 385, 105
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1

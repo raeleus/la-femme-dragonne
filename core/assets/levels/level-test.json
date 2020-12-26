@@ -1,0 +1,52 @@
+{
+  "ogmoVersion": "3.3.0",
+  "width": 480,
+  "height": 630,
+  "offsetX": 0,
+  "offsetY": 0,
+  "layers": [
+    {
+      "name": "decals",
+      "_eid": "55894732",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 24,
+      "gridCellHeight": 42,
+      "gridCellsX": 20,
+      "gridCellsY": 15,
+      "decals": [
+        {"x": 120, "y": 315, "texture": "game/Template_Map_1.png"},
+        {"x": 360.18205574741745, "y": 315.1754022045887, "texture": "game/Template_Map_1.png"}
+      ],
+      "folder": ""
+    },
+    {
+      "name": "entities",
+      "_eid": "55897897",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 12,
+      "gridCellHeight": 42,
+      "gridCellsX": 40,
+      "gridCellsY": 15,
+      "entities": [
+        {"name": "wall", "id": 9, "_eid": "55890852", "x": 0, "y": 630, "width": 480, "height": 42, "originX": 0, "originY": 42},
+        {"name": "wall", "id": 10, "_eid": "55890852", "x": 0, "y": 588, "width": 24, "height": 588, "originX": 0, "originY": 588},
+        {"name": "wall", "id": 11, "_eid": "55890852", "x": 24, "y": 42, "width": 456, "height": 42, "originX": 0, "originY": 42},
+        {"name": "pit", "id": 13, "_eid": "55943121", "x": 0, "y": 420, "width": 240, "height": 42, "originX": 0, "originY": 42},
+        {"name": "pit", "id": 14, "_eid": "55943121", "x": 0, "y": 378, "width": 120, "height": 84, "originX": 0, "originY": 84},
+        {"name": "pit", "id": 15, "_eid": "55943121", "x": 120, "y": 336, "width": 120, "height": 84, "originX": 0, "originY": 84},
+        {"name": "pit", "id": 16, "_eid": "55943121", "x": 0, "y": 252, "width": 240, "height": 42, "originX": 0, "originY": 42},
+        {"name": "player", "id": 17, "_eid": "56023188", "x": 36, "y": 588, "originX": 12, "originY": 42},
+        {"name": "enemy", "id": 18, "_eid": "61803422", "x": 180, "y": 504, "originX": 12, "originY": 42},
+        {"name": "pit", "id": 19, "_eid": "55943121", "x": 0, "y": 336, "width": 24, "height": 42, "originX": 0, "originY": 42},
+        {"name": "wall", "id": 20, "_eid": "55890852", "x": 456, "y": 588, "width": 24, "height": 546, "originX": 0, "originY": 546},
+        {"name": "pit", "id": 21, "_eid": "55943121", "x": 264, "y": 252, "width": 192, "height": 42, "originX": 0, "originY": 42},
+        {"name": "pit", "id": 22, "_eid": "55943121", "x": 360, "y": 336, "width": 120, "height": 126, "originX": 0, "originY": 126},
+        {"name": "pit", "id": 23, "_eid": "55943121", "x": 264, "y": 420, "width": 96, "height": 126, "originX": 0, "originY": 126},
+        {"name": "pit", "id": 24, "_eid": "55943121", "x": 264, "y": 336, "width": 216, "height": 42, "originX": 0, "originY": 42},
+        {"name": "pit", "id": 25, "_eid": "55943121", "x": 264, "y": 420, "width": 216, "height": 42, "originX": 0, "originY": 42}
+      ]
+    }
+  ]
+}

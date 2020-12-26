@@ -1,0 +1,39 @@
+{
+"skeleton": {
+	"hash": "bXNtEgAICatNeUQXRJzZrIRqzfo",
+	"spine": "3.8.99",
+	"x": -11.6,
+	"y": -2.68,
+	"width": 24,
+	"height": 42,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/Player_Idle1", "bone": "root", "color": "ff0000ff", "attachment": "game/Player_Idle1" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -6.68, -0.27, -7.21, 35.48, 7.84, 35.48, 7.48, -0.09 ]
+				}
+			},
+			"game/Player_Idle1": {
+				"game/Player_Idle1": { "x": 0.4, "y": 18.32, "width": 24, "height": 42 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

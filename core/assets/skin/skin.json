@@ -1,0 +1,185 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"font": {
+		"file": "font.fnt"
+	},
+	"large": {
+		"file": "large.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"brown": {
+		"r": 0.5466667,
+		"g": 0.47503817,
+		"b": 0.27333334,
+		"a": 1
+	},
+	"light-brown": {
+		"r": 0.9066667,
+		"g": 0.8250917,
+		"b": 0.5953778,
+		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable": {
+	"light-brown": {
+		"name": "white",
+		"color": "light-brown"
+	}
+},
+"com.ray3k.tenpatch.TenPatchDrawable": {
+	"button-10": {
+		"region": "button",
+		"horizontalStretchAreas": [ 0, 157 ],
+		"verticalStretchAreas": [ 0, 54 ],
+		"tiling": false,
+		"minWidth": 158,
+		"minHeight": 55,
+		"rightWidth": 8,
+		"leftWidth": 9,
+		"bottomHeight": 5,
+		"topHeight": 5,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2
+	},
+	"scroll-10": {
+		"region": "scroll",
+		"horizontalStretchAreas": [ 0, 5 ],
+		"verticalStretchAreas": [ 0, 5 ],
+		"tiling": false,
+		"minWidth": 6,
+		"minHeight": 6,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2
+	},
+	"select-box-10": {
+		"region": "select-box",
+		"horizontalStretchAreas": [ 0, 125 ],
+		"verticalStretchAreas": [ 4, 15, 37, 48 ],
+		"tiling": false,
+		"minWidth": 158,
+		"minHeight": 55,
+		"rightWidth": 37,
+		"leftWidth": 6,
+		"bottomHeight": 5,
+		"topHeight": 5,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2
+	},
+	"slider-10": {
+		"region": "slider",
+		"horizontalStretchAreas": [ 0, 173 ],
+		"verticalStretchAreas": [ 0, 3 ],
+		"tiling": false,
+		"minWidth": 174,
+		"minHeight": 4,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2
+	},
+	"window-10": {
+		"region": "window",
+		"horizontalStretchAreas": [ 1, 87 ],
+		"verticalStretchAreas": [ 1, 88 ],
+		"tiling": false,
+		"minWidth": 89,
+		"minHeight": 90,
+		"rightWidth": 4,
+		"leftWidth": 4,
+		"bottomHeight": 4,
+		"topHeight": 4,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "font"
+	},
+	"large": {
+		"font": "large"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
+	"default": {
+		"hScrollKnob": "scroll-10",
+		"vScrollKnob": "scroll-10"
+	},
+	"list": {
+		"background": "light-brown",
+		"hScrollKnob": "scroll-10",
+		"vScrollKnob": "scroll-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle": {
+	"default-horizontal": {
+		"background": "slider-10",
+		"knob": "slider-knob"
+	},
+	"default-vertical": {
+		"background": "slider-10",
+		"knob": "slider-knob"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"default": {
+		"font": "large",
+		"up": "button-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
+	"default": {
+		"label": "default"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"default": {
+		"background": "window-10",
+		"titleFont": "font"
+	}
+}
+}

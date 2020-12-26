@@ -1,0 +1,143 @@
+{
+  "ogmoVersion": "3.3.0",
+  "width": 558,
+  "height": 713,
+  "offsetX": 0,
+  "offsetY": 0,
+  "layers": [
+    {
+      "name": "background",
+      "_eid": "55894732",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 1,
+      "gridCellHeight": 1,
+      "gridCellsX": 558,
+      "gridCellsY": 713,
+      "decals": [
+        {"x": 280, "y": 355.5, "texture": "game/Debug_Map_BASE.png"}
+      ],
+      "folder": ""
+    },
+    {
+      "name": "template",
+      "_eid": "70312669",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 71,
+      "gridCellsY": 91,
+      "decals": [
+        {"x": 280, "y": 355.5, "texture": "game/Debug_Map_KEY.png"}
+      ],
+      "folder": ""
+    },
+    {
+      "name": "entities",
+      "_eid": "55897897",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 1,
+      "gridCellHeight": 1,
+      "gridCellsX": 558,
+      "gridCellsY": 713,
+      "entities": [
+        {"name": "wall", "id": 20, "_eid": "55890852", "x": 1, "y": 629, "width": 145, "height": 31, "originX": 0, "originY": 31},
+        {"name": "wall", "id": 21, "_eid": "55890852", "x": 122, "y": 712, "width": 24, "height": 83, "originX": 0, "originY": 83},
+        {"name": "wall", "id": 22, "_eid": "55890852", "x": 146, "y": 712, "width": 263, "height": 31, "originX": 0, "originY": 31},
+        {"name": "wall", "id": 23, "_eid": "55890852", "x": 409, "y": 712, "width": 24, "height": 324, "originX": 0, "originY": 324},
+        {"name": "wall", "id": 24, "_eid": "55890852", "x": 433, "y": 419, "width": 126, "height": 31, "originX": 0, "originY": 31},
+        {"name": "wall", "id": 25, "_eid": "55890852", "x": 535, "y": 419, "width": 24, "height": 420, "originX": 0, "originY": 420},
+        {"name": "wall", "id": 26, "_eid": "55890852", "x": 1, "y": 41, "width": 534, "height": 42, "originX": 0, "originY": 42},
+        {"name": "wall", "id": 27, "_eid": "55890852", "x": 1, "y": 598, "width": 24, "height": 557, "originX": 0, "originY": 557},
+        {"name": "wall", "id": 28, "_eid": "55890852", "x": 217, "y": 94, "width": 24, "height": 53, "originX": 0, "originY": 53},
+        {"name": "wall", "id": 29, "_eid": "55890852", "x": 217, "y": 419, "width": 24, "height": 280, "originX": 0, "originY": 280},
+        {"name": "wall", "id": 30, "_eid": "55890852", "x": 241, "y": 419, "width": 84, "height": 31, "originX": 0, "originY": 31},
+        {"name": "wall", "id": 31, "_eid": "55890852", "x": 301, "y": 462, "width": 24, "height": 43, "originX": 0, "originY": 43},
+        {"name": "wall", "id": 32, "_eid": "55890852", "x": 301, "y": 629, "width": 24, "height": 131, "originX": 0, "originY": 131},
+        {"name": "wall", "id": 33, "_eid": "55890852", "x": 220, "y": 629, "width": 81, "height": 31, "originX": 0, "originY": 31},
+        {"name": "pit", "id": 34, "_eid": "55943121", "x": 1, "y": 419, "width": 232, "height": 42, "originX": 0, "originY": 42},
+        {"name": "pit", "id": 35, "_eid": "55943121", "x": 1, "y": 251, "width": 232, "height": 42, "originX": 0, "originY": 42},
+        {"name": "pit", "id": 36, "_eid": "55943121", "x": 121, "y": 335, "width": 104, "height": 125, "originX": 0, "originY": 125},
+        {"name": "pit", "id": 37, "_eid": "55943121", "x": 12, "y": 418, "width": 109, "height": 125, "originX": 0, "originY": 125},
+        {"name": "player", "id": 38, "_eid": "56023188", "x": 62, "y": 576, "originX": 12, "originY": 42},
+        {"name": "random-enemy", "id": 39, "_eid": "61803422", "x": 397, "y": 217, "originX": 12, "originY": 42},
+        {"name": "pit", "id": 40, "_eid": "55943121", "x": 5, "y": 335, "width": 225, "height": 42, "originX": 0, "originY": 42},
+        {"name": "slideable-obstacle", "id": 41, "_eid": "73300769", "x": 220, "y": 139, "width": 18, "height": 45, "originX": 0, "originY": 45},
+        {
+          "name": "jumpeable-obstacle",
+          "id": 42,
+          "_eid": "73315524",
+          "x": 146,
+          "y": 625,
+          "width": 74,
+          "height": 24,
+          "originX": 0,
+          "originY": 24,
+          "values": {"jump-direction": "north"}
+        },
+        {
+          "name": "jumpeable-obstacle",
+          "id": 44,
+          "_eid": "73315524",
+          "x": 325,
+          "y": 419,
+          "width": 84,
+          "height": 31,
+          "originX": 0,
+          "originY": 31,
+          "values": {"jump-direction": "all"}
+        },
+        {
+          "name": "disappearing-obstacle",
+          "id": 45,
+          "_eid": "73310051",
+          "x": 301,
+          "y": 498,
+          "width": 24,
+          "height": 36,
+          "originX": 0,
+          "originY": 36,
+          "values": {"triggerName": "door1", "range": -1}
+        },
+        {
+          "name": "button",
+          "id": 46,
+          "_eid": "73310983",
+          "x": 280,
+          "y": 536,
+          "width": 8,
+          "height": 12,
+          "originX": 0,
+          "originY": 12,
+          "values": {"triggerName": "door1"}
+        },
+        {
+          "name": "button",
+          "id": 47,
+          "_eid": "73310983",
+          "x": 336,
+          "y": 536,
+          "width": 8,
+          "height": 12,
+          "originX": 0,
+          "originY": 12,
+          "values": {"triggerName": "door1"}
+        }
+      ]
+    },
+    {
+      "name": "foreground",
+      "_eid": "73333321",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 71,
+      "gridCellsY": 91,
+      "decals": [],
+      "folder": ""
+    }
+  ]
+}
