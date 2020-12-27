@@ -10,10 +10,11 @@ import static com.ray3k.template.Core.*;
 public class DecalEntity extends Entity {
     private AtlasSprite sprite;
     
-    public DecalEntity(float centerX, float centerY, String regionName) {
+    public DecalEntity(float centerX, float centerY, float scaleX, float scaleY, String regionName) {
         sprite = new AtlasSprite(Resources.textures_textures.findRegion(regionName));
         sprite.setOriginCenter();
         sprite.setPosition(centerX - sprite.getWidth() / 2, centerY - sprite.getHeight() / 2);
+        sprite.setScale(scaleX, scaleY);
         depth = BACKGROUND_DEPTH;
     }
     

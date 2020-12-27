@@ -9,6 +9,7 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
 
@@ -31,13 +32,18 @@ public class SplashScreen extends JamScreen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 Gdx.input.setInputProcessor(null);
-                core.transition(new OptionsScreen());
+                core.transition(new LibgdxScreen());
             }
         });
     
         stage.addListener(new ClickListener(Input.Buttons.RIGHT) {
             @Override
             public void clicked(InputEvent event, float x, float y) {
+                GameScreen.firstRun = true;
+                GameScreen.fluidList = new Array<>(GameScreen.skinNames);
+                GameScreen.fluidList.shuffle();
+                GameScreen.numberOfEnemies = 5;
+                GameScreen.neededWins = 1;
                 Gdx.input.setInputProcessor(null);
                 core.transition(new GameScreen());
             }

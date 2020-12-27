@@ -3,7 +3,6 @@ package com.ray3k.template;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Input.Buttons;
-import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.assets.loaders.SkinLoader.SkinParameter;
 import com.badlogic.gdx.audio.Music;
@@ -14,7 +13,6 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.dongbat.jbump.CollisionFilter;
-import com.dongbat.jbump.Item;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.World;
 import com.esotericsoftware.spine.AnimationStateData;
@@ -28,7 +26,7 @@ import com.ray3k.template.transitions.*;
 import static com.ray3k.template.Resources.*;
 
 public class Core extends JamGame {
-    public static final String PROJECT_NAME = "libgdx15";
+    public static final String PROJECT_NAME = "lafemmedragonne";
     public static Core core;
     public static Skin skin;
     public static SkeletonRenderer skeletonRenderer;
@@ -38,16 +36,16 @@ public class Core extends JamGame {
     public static CollisionFilter defaultCollisionFilter;
     public static CrossPlatformWorker crossPlatformWorker;
     public enum Binding {
-        LEFT, RIGHT, UP, DOWN, SPRINT, JUMP, SLIDE;
+        SHOOT, ZOOM
     }
     public static float bgm;
     public static float sfx;
     public static Preferences preferences;
-    public static int PLAYER_DEPTH = -100;
-    public static int ENEMY_DEPTH = 50;
-    public static int PROJECTILE_DEPTH = 10;
-    public static int BACKGROUND_DEPTH = 200;
-    public static int PROP_DEPTH = 190;
+    public static int ENEMY_DEPTH = 250;
+    public static int BACKGROUND_DEPTH = 300;
+    public static int MIDGROUND_DEPTH = 200;
+    public static int FOREGROUND_DEPTH = 100;
+    public static int SCOPE_DEPTH = 50;
     public static boolean debugging;
     public static CollisionFilter nullFilter = (item, other) -> null;
     
@@ -128,12 +126,7 @@ public class Core extends JamGame {
     }
     
     public void setDefaultBindings() {
-        JamScreen.addKeyBinding(Binding.LEFT, Input.Keys.A);
-        JamScreen.addKeyBinding(Binding.RIGHT, Input.Keys.D);
-        JamScreen.addKeyBinding(Binding.UP, Input.Keys.W);
-        JamScreen.addKeyBinding(Binding.DOWN, Input.Keys.S);
-        JamScreen.addKeyBinding(Binding.SPRINT, Keys.SHIFT_LEFT);
-        JamScreen.addButtonBinding(Binding.SLIDE, Buttons.RIGHT);
-        JamScreen.addKeyBinding(Binding.JUMP, Keys.SPACE);
+        JamScreen.addButtonBinding(Binding.SHOOT, Buttons.LEFT);
+        JamScreen.addButtonBinding(Binding.ZOOM, Buttons.RIGHT);
     }
 }

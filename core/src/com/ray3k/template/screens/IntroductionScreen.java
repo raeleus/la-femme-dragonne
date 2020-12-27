@@ -32,7 +32,7 @@ public class IntroductionScreen extends JamScreen {
     @Override
     public void show() {
         super.show();
-
+        
         spineDrawables = new Array<>();
         sounds = new ObjectSet<>();
         
@@ -53,13 +53,13 @@ public class IntroductionScreen extends JamScreen {
         Image image = new Image(spineDrawable);
         image.setScaling(Scaling.fit);
         root.add(image).grow();
-        spineDrawable.getAnimationState().setAnimation(0, animation, false);
+        spineDrawable.getAnimationState().setAnimation(0, GameScreen.neededWins > 0? animation : win, false);
     
         spineDrawable.getAnimationState().addListener(new AnimationState.AnimationStateAdapter() {
             @Override
             public void complete(AnimationState.TrackEntry entry) {
-                if (entry.getAnimation() == animation) {
-                    core.transition(new GameScreen());
+                if (entry.getAnimation() == animation || entry.getAnimation() == win) {
+                    core.transition(GameScreen.neededWins > 0? new GameScreen() : new MenuScreen());
                 }
             }
     
@@ -76,13 +76,13 @@ public class IntroductionScreen extends JamScreen {
         stage.addListener(new InputListener() {
             @Override
             public boolean keyDown(InputEvent event, int keycode) {
-                core.transition(new GameScreen());
+                core.transition(GameScreen.neededWins > 0? new GameScreen() : new MenuScreen());
                 return true;
             }
     
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-                core.transition(new GameScreen());
+                core.transition(GameScreen.neededWins > 0? new GameScreen() : new MenuScreen());
                 return true;
             }
         });

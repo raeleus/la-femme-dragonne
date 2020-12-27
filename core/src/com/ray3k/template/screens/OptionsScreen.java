@@ -52,7 +52,7 @@ public class OptionsScreen extends JamScreen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 Gdx.input.setInputProcessor(null);
-                core.transition(new LibgdxScreen());
+                core.transition(new MenuScreen());
             }
         });
         

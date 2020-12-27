@@ -1,0 +1,98 @@
+{
+"skeleton": {
+	"hash": "beogUf1k80wcwfaU+uof8FnglDs",
+	"spine": "3.8.99",
+	"x": -510.49,
+	"y": -285.4,
+	"width": 1024,
+	"height": 576,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/scope", "parent": "root" }
+],
+"slots": [
+	{ "name": "game/scope", "bone": "game/scope", "attachment": "game/scope" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/scope": {
+				"game/scope": { "x": 1.51, "y": 2.6, "width": 1024, "height": 576 }
+			}
+		}
+	}
+],
+"events": {
+	"game/shot-hit": { "audio": "game/shot-hit.mp3" },
+	"game/shot-miss": { "audio": "game/shot-miss.mp3" }
+},
+"animations": {
+	"shoot-hit": {
+		"bones": {
+			"game/scope": {
+				"rotate": [
+					{ "time": 0.6 },
+					{ "time": 0.7333, "angle": 11.15 },
+					{ "time": 1, "angle": 6.44 },
+					{ "time": 1.2, "angle": 14.64 },
+					{ "time": 1.5, "angle": -6.51 },
+					{ "time": 1.8667, "angle": 4.3 },
+					{ "time": 2.2667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1, "y": 19.4 },
+					{ "time": 0.2333, "y": -13.58 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.6 },
+					{ "time": 0.7333, "x": -15.52, "y": -6.79 },
+					{ "time": 1, "x": -19.4, "y": 11.64 },
+					{ "time": 1.2, "x": -23.28, "y": -3.88 },
+					{ "time": 1.5, "x": 5.33, "y": -0.49 },
+					{ "time": 1.8667, "y": -2.43 },
+					{ "time": 2.2667 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/shot-hit" }
+		]
+	},
+	"shoot-miss": {
+		"bones": {
+			"game/scope": {
+				"rotate": [
+					{ "time": 0.6 },
+					{ "time": 0.7333, "angle": 11.15 },
+					{ "time": 1, "angle": 6.44 },
+					{ "time": 1.2, "angle": 14.64 },
+					{ "time": 1.5, "angle": -6.51 },
+					{ "time": 1.8667, "angle": 4.3 },
+					{ "time": 2.2667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1, "y": 19.4 },
+					{ "time": 0.2333, "y": -13.58 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.6 },
+					{ "time": 0.7333, "x": -15.52, "y": -6.79 },
+					{ "time": 1, "x": -19.4, "y": 11.64 },
+					{ "time": 1.2, "x": -23.28, "y": -3.88 },
+					{ "time": 1.5, "x": 5.33, "y": -0.49 },
+					{ "time": 1.8667, "y": -2.43 },
+					{ "time": 2.2667 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/shot-miss" }
+		]
+	},
+	"stand": {}
+}
+}

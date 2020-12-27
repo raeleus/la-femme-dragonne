@@ -2,94 +2,527 @@
 textures.png
 size: 2048,2048
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Linear,Linear
 repeat: none
-game/Debug_Map_BASE
+game/64kb.studio
   rotate: false
-  xy: 1, 801
-  size: 558, 713
-  orig: 558, 713
+  xy: 1219, 682
+  size: 80, 80
+  orig: 80, 80
   offset: 0, 0
   index: -1
-game/Debug_Map_KEY
+game/adrien
   rotate: false
-  xy: 1, 86
-  size: 558, 713
-  orig: 558, 713
+  xy: 1315, 136
+  size: 80, 80
+  orig: 80, 80
   offset: 0, 0
   index: -1
-game/Player_Idle1
+game/ali
   rotate: false
-  xy: 561, 843
-  size: 23, 39
-  orig: 24, 42
-  offset: 1, 1
-  index: -1
-game/Player_Idle2
-  rotate: false
-  xy: 561, 802
-  size: 20, 39
-  orig: 24, 42
-  offset: 2, 1
-  index: -1
-game/Player_Idle3
-  rotate: false
-  xy: 803, 1434
-  size: 18, 39
-  orig: 24, 42
-  offset: 2, 1
-  index: -1
-game/Player_Idle4
-  rotate: false
-  xy: 1, 1
-  size: 21, 39
-  orig: 24, 42
-  offset: 2, 1
-  index: -1
-game/Player_Idle5
-  rotate: false
-  xy: 803, 1475
-  size: 23, 39
-  orig: 24, 42
-  offset: 1, 1
-  index: -1
-game/Player_Idle6
-  rotate: false
-  xy: 27, 45
-  size: 21, 39
-  orig: 24, 42
-  offset: 2, 1
-  index: -1
-game/Player_Idle7
-  rotate: false
-  xy: 828, 1475
-  size: 18, 39
-  orig: 24, 42
-  offset: 5, 1
-  index: -1
-game/Player_Idle8
-  rotate: false
-  xy: 586, 843
-  size: 20, 39
-  orig: 24, 42
-  offset: 3, 1
-  index: -1
-game/Player_Idle9
-  rotate: false
-  xy: 1, 42
-  size: 24, 42
-  orig: 24, 42
+  xy: 1397, 136
+  size: 80, 80
+  orig: 80, 80
   offset: 0, 0
   index: -1
-game/Template_Map_1
+game/arm
   rotate: false
-  xy: 561, 884
-  size: 240, 630
-  orig: 240, 630
+  xy: 1853, 701
+  size: 94, 39
+  orig: 99, 44
+  offset: 4, 3
+  index: -1
+game/background
+  rotate: true
+  xy: 1347, 1020
+  size: 1024, 576
+  orig: 1024, 576
+  offset: 0, 0
+  index: -1
+game/bear
+  rotate: false
+  xy: 1479, 136
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/bobishere
+  rotate: false
+  xy: 1306, 54
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/building
+  rotate: false
+  xy: 1, 764
+  size: 1344, 1280
+  orig: 1344, 1280
+  offset: 0, 0
+  index: -1
+game/cackling
+  rotate: false
+  xy: 1388, 54
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/chest
+  rotate: false
+  xy: 1213, 141
+  size: 100, 144
+  orig: 109, 158
+  offset: 7, 8
+  index: -1
+game/cococore
+  rotate: false
+  xy: 1470, 54
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/cosmicmenace
+  rotate: false
+  xy: 1552, 54
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/doge
+  rotate: false
+  xy: 1545, 938
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/dragun-queen
+  rotate: false
+  xy: 1545, 856
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/foot
+  rotate: false
+  xy: 1219, 466
+  size: 74, 40
+  orig: 81, 47
+  offset: 5, 2
+  index: -1
+game/fore-arm
+  rotate: false
+  xy: 1597, 607
+  size: 112, 31
+  orig: 117, 33
+  offset: 3, 2
+  index: -1
+game/fore-leg
+  rotate: true
+  xy: 1265, 10
+  size: 129, 39
+  orig: 138, 45
+  offset: 6, 4
+  index: -1
+game/groxar
+  rotate: false
+  xy: 1545, 774
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/hapz
+  rotate: false
+  xy: 1627, 938
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/heart
+  rotate: false
+  xy: 1027, 138
+  size: 128, 120
+  orig: 128, 120
+  offset: 0, 0
+  index: -1
+game/herring1
+  rotate: true
+  xy: 1219, 508
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/herring2
+  rotate: false
+  xy: 1306, 1
+  size: 171, 51
+  orig: 171, 51
+  offset: 0, 0
+  index: -1
+game/herring3
+  rotate: true
+  xy: 1162, 287
+  size: 173, 53
+  orig: 173, 53
+  offset: 0, 0
+  index: -1
+game/herring4
+  rotate: true
+  xy: 1217, 287
+  size: 173, 51
+  orig: 173, 51
+  offset: 0, 0
+  index: -1
+game/herring5
+  rotate: true
+  xy: 1157, 84
+  size: 174, 54
+  orig: 174, 54
+  offset: 0, 0
+  index: -1
+game/icefill
+  rotate: false
+  xy: 1709, 938
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/james
+  rotate: false
+  xy: 1627, 856
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/john
+  rotate: false
+  xy: 1709, 856
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/laptop
+  rotate: true
+  xy: 1027, 462
+  size: 300, 190
+  orig: 300, 190
+  offset: 0, 0
+  index: -1
+game/leg
+  rotate: true
+  xy: 1213, 3
+  size: 136, 50
+  orig: 140, 57
+  offset: 1, 2
+  index: -1
+game/login94
+  rotate: false
+  xy: 1627, 774
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/lyze
+  rotate: false
+  xy: 1709, 774
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/mgsx
+  rotate: false
+  xy: 1597, 640
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/mr00anderson
+  rotate: false
+  xy: 1679, 640
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/mrstahlfelge
+  rotate: false
+  xy: 1719, 558
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/myke
+  rotate: false
+  xy: 1735, 263
+  size: 77, 77
+  orig: 77, 77
+  offset: 0, 0
+  index: -1
+game/nitten
+  rotate: true
+  xy: 1735, 342
+  size: 80, 78
+  orig: 80, 78
+  offset: 0, 0
+  index: -1
+game/office1
+  rotate: true
+  xy: 1271, 508
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office10
+  rotate: true
+  xy: 1853, 846
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office2
+  rotate: true
+  xy: 1270, 292
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office3
+  rotate: false
+  xy: 1479, 2
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office4
+  rotate: true
+  xy: 1545, 600
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office5
+  rotate: false
+  xy: 1545, 548
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office6
+  rotate: false
+  xy: 1597, 722
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office7
+  rotate: false
+  xy: 1545, 496
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office8
+  rotate: false
+  xy: 1561, 444
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/office9
+  rotate: false
+  xy: 1761, 640
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/payne
+  rotate: false
+  xy: 1771, 692
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/peanut-panda
+  rotate: false
+  xy: 1801, 558
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/pilzhere
+  rotate: false
+  xy: 1883, 558
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/pumpkin
+  rotate: true
+  xy: 1027, 260
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+game/raeleus
+  rotate: false
+  xy: 1949, 660
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/raseya
+  rotate: false
+  xy: 1653, 310
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/red-sponge
+  rotate: true
+  xy: 1735, 194
+  size: 67, 80
+  orig: 67, 80
+  offset: 0, 0
+  index: -1
+game/santorno
+  rotate: false
+  xy: 1545, 310
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/scope
+  rotate: false
+  xy: 1, 186
+  size: 1024, 576
+  orig: 1024, 576
+  offset: 0, 0
+  index: -1
+game/silvio257
+  rotate: false
+  xy: 1653, 228
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/tecksup
+  rotate: false
+  xy: 1545, 228
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/tettinger
+  rotate: false
+  xy: 1653, 146
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/this_is_phil
+  rotate: false
+  xy: 1561, 146
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/wall
+  rotate: true
+  xy: 1347, 218
+  size: 800, 196
+  orig: 800, 196
+  offset: 0, 0
+  index: -1
+game/weird_office1
+  rotate: true
+  xy: 1791, 846
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/weird_office2
+  rotate: false
+  xy: 1791, 794
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/weird_office3
+  rotate: false
+  xy: 1853, 742
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/weird_office4
+  rotate: true
+  xy: 1905, 846
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/weird_office5
+  rotate: false
+  xy: 1719, 506
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/weird_office6
+  rotate: false
+  xy: 1561, 392
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+game/zaida
+  rotate: false
+  xy: 1653, 64
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+game/zeroed
+  rotate: false
+  xy: 1735, 424
+  size: 80, 80
+  orig: 80, 80
   offset: 0, 0
   index: -1
 
 textures2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+introduction/bed
+  rotate: false
+  xy: 1, 1445
+  size: 1024, 576
+  orig: 1024, 576
+  offset: 0, 0
+  index: -1
+introduction/dragon-queen
+  rotate: true
+  xy: 1027, 1601
+  size: 420, 572
+  orig: 420, 572
+  offset: 0, 0
+  index: -1
+introduction/dragon-queen2
+  rotate: false
+  xy: 1601, 1449
+  size: 420, 572
+  orig: 420, 572
+  offset: 0, 0
+  index: -1
+introduction/z
+  rotate: true
+  xy: 1027, 1549
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+
+textures3.png
 size: 4096,4096
 format: RGBA8888
 filter: Linear,Linear
@@ -207,7 +640,7 @@ logo/x-spiderman
   offset: 9, 9
   index: -1
 
-textures3.png
+textures4.png
 size: 1024,1024
 format: RGBA8888
 filter: Nearest,Nearest
@@ -234,78 +667,50 @@ raseya-logo/white
   offset: 0, 0
   index: -1
 
-textures4.png
-size: 512,512
+textures5.png
+size: 2048,2048
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Linear,Linear
 repeat: none
-button
+bg
   rotate: false
-  xy: 1, 46
-  size: 158, 55
-  orig: 158, 55
+  xy: 1, 519
+  size: 1024, 576
+  orig: 1024, 576
   offset: 0, 0
   index: -1
-font
+scroll-knob
   rotate: false
-  xy: 1, 197
-  size: 505, 74
-  orig: 505, 75
-  offset: 0, 0
-  index: -1
-large
-  rotate: false
-  xy: 1, 273
-  size: 505, 236
-  orig: 505, 237
-  offset: 0, 0
-  index: -1
-scroll
-  rotate: false
-  xy: 476, 170
-  size: 6, 6
-  orig: 6, 6
-  offset: 0, 0
-  index: -1
-select-box
-  rotate: false
-  xy: 161, 46
-  size: 158, 55
-  orig: 158, 55
+  xy: 1027, 1006
+  size: 15, 15
+  orig: 15, 15
   offset: 0, 0
   index: -1
 slider
   rotate: false
-  xy: 321, 97
-  size: 174, 4
-  orig: 174, 4
+  xy: 1, 513
+  size: 219, 4
+  orig: 219, 4
   offset: 0, 0
   index: -1
 slider-knob
   rotate: false
-  xy: 476, 178
-  size: 6, 17
-  orig: 6, 17
+  xy: 1027, 979
+  size: 7, 25
+  orig: 7, 25
   offset: 0, 0
-  index: -1
-title
-  rotate: false
-  xy: 1, 103
-  size: 382, 92
-  orig: 463, 108
-  offset: 41, 9
   index: -1
 white
   rotate: false
-  xy: 508, 508
+  xy: 1027, 976
   size: 1, 1
   orig: 1, 1
   offset: 0, 0
   index: -1
 window
   rotate: false
-  xy: 385, 105
-  size: 89, 90
-  orig: 89, 90
+  xy: 1027, 1023
+  size: 68, 72
+  orig: 68, 72
   offset: 0, 0
   index: -1

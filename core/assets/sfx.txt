@@ -1,4 +1,99 @@
 sfx/click.mp3
+sfx/game/64kbstudio.mp3
+sfx/game/a jam protester.mp3
+sfx/game/a regular member of the discord server.mp3
+sfx/game/adrien.mp3
+sfx/game/agent dragonne come in.mp3
+sfx/game/ali.mp3
+sfx/game/an artist.mp3
+sfx/game/bear.mp3
+sfx/game/bobishere.mp3
+sfx/game/cackling ladies.mp3
+sfx/game/calm down you're shooting wildly.mp3
+sfx/game/cococore.mp3
+sfx/game/cosmicmenace.mp3
+sfx/game/currently developing a game.mp3
+sfx/game/developer doge.mp3
+sfx/game/develops a level editor.mp3
+sfx/game/disable the camera.mp3
+sfx/game/does jam reviews.mp3
+sfx/game/doesn't actually use libgdx.mp3
+sfx/game/doesn't look like a person.mp3
+sfx/game/dragon copy how many targets this time.mp3
+sfx/game/dragon fuck why can't I just have a normal dream.mp3
+sfx/game/dragon heh heh got em.mp3
+sfx/game/dragon hey sexy.mp3
+sfx/game/dragon queen.mp3
+sfx/game/dragon who's the hit.mp3
+sfx/game/eats chutes and leaves.mp3
+sfx/game/execute the security guard.mp3
+sfx/game/female.mp3
+sfx/game/goes to college.mp3
+sfx/game/groxar.mp3
+sfx/game/has a beard.mp3
+sfx/game/has a cat.mp3
+sfx/game/has a crazy commit streak.mp3
+sfx/game/has not submitted a jam game before.mp3
+sfx/game/he declares himself the winner all the time.mp3
+sfx/game/he's making a remake of an old game.mp3
+sfx/game/icefill.mp3
+sfx/game/james.mp3
+sfx/game/john.mp3
+sfx/game/just one.mp3
+sfx/game/lives in new zealand.mp3
+sfx/game/lives in vietnam.mp3
+sfx/game/login94.mp3
+sfx/game/looks blue.mp3
+sfx/game/looks like a cube.mp3
+sfx/game/looks like a maid.mp3
+sfx/game/looks like a person.mp3
+sfx/game/looks like an animal.mp3
+sfx/game/lyze.mp3
+sfx/game/made a game based on doctor strange love.mp3
+sfx/game/made a mode 7 shooter game before.mp3
+sfx/game/made a tower defense clicker game.mp3
+sfx/game/made out of a spongy porous material.mp3
+sfx/game/mgsx.mp3
+sfx/game/missed.mp3
+sfx/game/mr00anderson.mp3
+sfx/game/mrstahlfelge.mp3
+sfx/game/myke.mp3
+sfx/game/nitten.mp3
+sfx/game/not american.mp3
+sfx/game/obsessed with pies.mp3
+sfx/game/obsessed with tacos.mp3
+sfx/game/payne.mp3
+sfx/game/peanut panda.mp3
+sfx/game/pilzhere.mp3
+sfx/game/raeleus.mp3
+sfx/game/raseya.mp3
+sfx/game/red sponge.mp3
+sfx/game/runs the whole show.mp3
+sfx/game/santorno.mp3
+sfx/game/shot-hit.mp3
+sfx/game/shot-miss.mp3
+sfx/game/take out the breaker box.mp3
+sfx/game/tecksup.mp3
+sfx/game/tettinger.mp3
+sfx/game/they make music.mp3
+sfx/game/they participated in gbtk.mp3
+sfx/game/they're a developer of a very popular game.mp3
+sfx/game/they're a streamer.mp3
+sfx/game/they're an expert with 3d.mp3
+sfx/game/they're part of the jam staff.mp3
+sfx/game/they're very strong.mp3
+sfx/game/they've made a jam game before.mp3
+sfx/game/wait new mission objective standby we are awiting the description.mp3
+sfx/game/wants to make a profitible game.mp3
+sfx/game/works on a famr.mp3
+sfx/game/works with roguelike games.mp3
+sfx/game/wrong target what the hell is wrong with you.mp3
+sfx/game/you've alerted security to your presence.mp3
+sfx/game/zaida.mp3
+sfx/game/zeroed.mp3
+sfx/introduction/snore.mp3
+sfx/introduction/win.mp3
+sfx/introduction/yawn.mp3
 sfx/logo/hit.mp3
 sfx/logo/libgd.mp3
 sfx/logo/ray3k song.mp3

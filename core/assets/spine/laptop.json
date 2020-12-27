@@ -1,0 +1,680 @@
+{
+"skeleton": {
+	"hash": "g5Hehu/VhfjDjJw3yL1gb+QUIfk",
+	"spine": "3.8.99",
+	"x": -150,
+	"y": -95,
+	"width": 300,
+	"height": 190,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/laptop", "bone": "root", "attachment": "game/laptop" },
+	{ "name": "icon", "bone": "root" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/laptop": {
+				"game/laptop": { "width": 300, "height": 190 }
+			},
+			"icon": {
+				"game/64kb.studio": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/adrien": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/ali": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/bear": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/bobishere": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/cackling": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/cococore": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/cosmicmenace": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/doge": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/dragun-queen": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/groxar": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/hapz": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/icefill": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/james": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/john": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/login94": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/lyze": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/mgsx": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/mr00anderson": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/mrstahlfelge": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/myke": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 77, "height": 77 },
+				"game/nitten": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 78 },
+				"game/payne": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/peanut-panda": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/pilzhere": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/raeleus": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/raseya": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/red-sponge": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 67, "height": 80 },
+				"game/santorno": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/silvio257": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/tecksup": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/tettinger": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/this_is_phil": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/zaida": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 },
+				"game/zeroed": { "x": 37.12, "y": 21.92, "scaleX": 1.3975, "scaleY": 1.3975, "width": 80, "height": 80 }
+			}
+		}
+	}
+],
+"events": {
+	"game/64kbstudio": { "audio": "game/64kbstudio.mp3" },
+	"game/adrien": { "audio": "game/adrien.mp3" },
+	"game/agent dragonne come in": { "audio": "game/agent dragonne come in.mp3" },
+	"game/a jam protester": { "audio": "game/a jam protester.mp3" },
+	"game/ali": { "audio": "game/ali.mp3" },
+	"game/an artist": { "audio": "game/an artist.mp3" },
+	"game/a regular member of the discord server": { "audio": "game/a regular member of the discord server.mp3" },
+	"game/bear": { "audio": "game/bear.mp3" },
+	"game/bobishere": { "audio": "game/bobishere.mp3" },
+	"game/cackling ladies": { "audio": "game/cackling ladies.mp3" },
+	"game/calm down you're shooting wildly": { "audio": "game/calm down you're shooting wildly.mp3" },
+	"game/cococore": { "audio": "game/cococore.mp3" },
+	"game/cosmicmenace": { "audio": "game/cosmicmenace.mp3" },
+	"game/currently developing a game": { "audio": "game/currently developing a game.mp3" },
+	"game/developer doge": { "audio": "game/developer doge.mp3" },
+	"game/develops a level editor": { "audio": "game/develops a level editor.mp3" },
+	"game/disable the camera": { "audio": "game/disable the camera.mp3" },
+	"game/does jam reviews": { "audio": "game/does jam reviews.mp3" },
+	"game/doesn't actually use libgdx": { "audio": "game/doesn't actually use libgdx.mp3" },
+	"game/doesn't look like a person": { "audio": "game/doesn't look like a person.mp3" },
+	"game/dragon copy how many targets this time": { "audio": "game/dragon copy how many targets this time.mp3" },
+	"game/dragon fuck why can't I just have a normal dream": { "audio": "game/dragon fuck why can't I just have a normal dream.mp3" },
+	"game/dragon heh heh got em": { "audio": "game/dragon heh heh got em.mp3" },
+	"game/dragon hey sexy": { "audio": "game/dragon hey sexy.mp3" },
+	"game/dragon queen": { "audio": "game/dragon queen.mp3" },
+	"game/dragon who's the hit": { "audio": "game/dragon who's the hit.mp3" },
+	"game/eats chutes and leaves": { "audio": "game/eats chutes and leaves.mp3" },
+	"game/execute the security guard": { "audio": "game/execute the security guard.mp3" },
+	"game/female": { "audio": "game/female.mp3" },
+	"game/goes to college": { "audio": "game/goes to college.mp3" },
+	"game/groxar": { "audio": "game/groxar.mp3" },
+	"game/has a beard": { "audio": "game/has a beard.mp3" },
+	"game/has a cat": { "audio": "game/has a cat.mp3" },
+	"game/has a crazy commit streak": { "audio": "game/has a crazy commit streak.mp3" },
+	"game/has not submitted a jam game before": { "audio": "game/has not submitted a jam game before.mp3" },
+	"game/he's making a remake of an old game": { "audio": "game/he's making a remake of an old game.mp3" },
+	"game/he declares himself the winner all the time": { "audio": "game/he declares himself the winner all the time.mp3" },
+	"game/icefill": { "audio": "game/icefill.mp3" },
+	"game/james": { "audio": "game/james.mp3" },
+	"game/john": { "audio": "game/john.mp3" },
+	"game/just one": { "audio": "game/just one.mp3" },
+	"game/lives in new zealand": { "audio": "game/lives in new zealand.mp3" },
+	"game/lives in vietnam": { "audio": "game/lives in vietnam.mp3" },
+	"game/login94": { "audio": "game/login94.mp3" },
+	"game/looks blue": { "audio": "game/looks blue.mp3" },
+	"game/looks like a cube": { "audio": "game/looks like a cube.mp3" },
+	"game/looks like a maid": { "audio": "game/looks like a maid.mp3" },
+	"game/looks like an animal": { "audio": "game/looks like an animal.mp3" },
+	"game/looks like a person": { "audio": "game/looks like a person.mp3" },
+	"game/lyze": { "audio": "game/lyze.mp3" },
+	"game/made a game based on doctor strange love": { "audio": "game/made a game based on doctor strange love.mp3" },
+	"game/made a mode 7 shooter game before": { "audio": "game/made a mode 7 shooter game before.mp3" },
+	"game/made a tower defense clicker game": { "audio": "game/made a tower defense clicker game.mp3" },
+	"game/made out of a spongy porous material": { "audio": "game/made out of a spongy porous material.mp3" },
+	"game/mgsx": { "audio": "game/mgsx.mp3" },
+	"game/missed": { "audio": "game/missed.mp3" },
+	"game/mr00anderson": { "audio": "game/mr00anderson.mp3" },
+	"game/mrstahlfelge": { "audio": "game/mrstahlfelge.mp3" },
+	"game/myke": { "audio": "game/myke.mp3" },
+	"game/nitten": { "audio": "game/nitten.mp3" },
+	"game/not american": { "audio": "game/not american.mp3" },
+	"game/obsessed with pies": { "audio": "game/obsessed with pies.mp3" },
+	"game/obsessed with tacos": { "audio": "game/obsessed with tacos.mp3" },
+	"game/payne": { "audio": "game/payne.mp3" },
+	"game/peanut panda": { "audio": "game/peanut panda.mp3" },
+	"game/pilzhere": { "audio": "game/pilzhere.mp3" },
+	"game/raeleus": { "audio": "game/raeleus.mp3" },
+	"game/raseya": { "audio": "game/raseya.mp3" },
+	"game/red sponge": { "audio": "game/red sponge.mp3" },
+	"game/runs the whole show": { "audio": "game/runs the whole show.mp3" },
+	"game/santorno": { "audio": "game/santorno.mp3" },
+	"game/take out the breaker box": { "audio": "game/take out the breaker box.mp3" },
+	"game/tecksup": { "audio": "game/tecksup.mp3" },
+	"game/tettinger": { "audio": "game/tettinger.mp3" },
+	"game/they're a developer of a very popular game": { "audio": "game/they're a developer of a very popular game.mp3" },
+	"game/they're an expert with 3d": { "audio": "game/they're an expert with 3d.mp3" },
+	"game/they're a streamer": { "audio": "game/they're a streamer.mp3" },
+	"game/they're part of the jam staff": { "audio": "game/they're part of the jam staff.mp3" },
+	"game/they're very strong": { "audio": "game/they're very strong.mp3" },
+	"game/they've made a jam game before": { "audio": "game/they've made a jam game before.mp3" },
+	"game/they make music": { "audio": "game/they make music.mp3" },
+	"game/they participated in gbtk": { "audio": "game/they participated in gbtk.mp3" },
+	"game/wait new mission objective standby we are awiting the description": { "audio": "game/wait new mission objective standby we are awiting the description.mp3" },
+	"game/wants to make a profitible game": { "audio": "game/wants to make a profitible game.mp3" },
+	"game/works on a famr": { "audio": "game/works on a famr.mp3" },
+	"game/works with roguelike games": { "audio": "game/works with roguelike games.mp3" },
+	"game/wrong target what the hell is wrong with you": { "audio": "game/wrong target what the hell is wrong with you.mp3" },
+	"game/you've alerted security to your presence": { "audio": "game/you've alerted security to your presence.mp3" },
+	"game/zaida": { "audio": "game/zaida.mp3" },
+	"game/zeroed": { "audio": "game/zeroed.mp3" }
+},
+"animations": {
+	"adrien": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/adrien" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/doesn't look like a person" },
+			{ "time": 10.0333, "name": "game/they participated in gbtk" },
+			{ "time": 20.0333, "name": "game/doesn't actually use libgdx" },
+			{ "time": 30.0333, "name": "game/adrien" }
+		]
+	},
+	"ali": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/ali" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/has not submitted a jam game before" },
+			{ "time": 10, "name": "game/an artist" },
+			{ "time": 20, "name": "game/obsessed with tacos" },
+			{ "time": 30.0333, "name": "game/ali" }
+		]
+	},
+	"bear": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/bear" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10, "name": "game/they participated in gbtk" },
+			{ "time": 20, "name": "game/he's making a remake of an old game" },
+			{ "time": 30.0333, "name": "game/bear" }
+		]
+	},
+	"bobishere": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/bobishere" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like a person" },
+			{ "time": 10, "name": "game/they've made a jam game before" },
+			{ "time": 20, "name": "game/they've made a jam game before" },
+			{ "time": 30.0333, "name": "game/bobishere" }
+		]
+	},
+	"cackling": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/cackling" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/female" },
+			{ "time": 10, "name": "game/not american" },
+			{ "time": 20, "name": "game/lives in vietnam" },
+			{ "time": 30.0333, "name": "game/cackling ladies" }
+		]
+	},
+	"cococore": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/cococore" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10, "name": "game/not american" },
+			{ "time": 20, "name": "game/has not submitted a jam game before" },
+			{ "time": 30.0333, "name": "game/cococore" }
+		]
+	},
+	"cosmicmenace": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/cosmicmenace" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they're an expert with 3d" },
+			{ "time": 10.0333, "name": "game/works on a famr" },
+			{ "time": 20.0333, "name": "game/lives in new zealand" },
+			{ "time": 30.0333, "name": "game/cosmicmenace" }
+		]
+	},
+	"doge": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/doge" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10.0333, "name": "game/a regular member of the discord server" },
+			{ "time": 20.0333, "name": "game/they've made a jam game before" },
+			{ "time": 30.0333, "name": "game/developer doge" }
+		]
+	},
+	"dragun-queen": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/dragun-queen" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they're part of the jam staff" },
+			{ "time": 10, "name": "game/doesn't actually use libgdx" },
+			{ "time": 20, "name": "game/does jam reviews" },
+			{ "time": 30.0333, "name": "game/dragon queen" }
+		]
+	},
+	"finish": {
+		"slots": {
+			"game/laptop": {
+				"attachment": [
+					{ "time": 2.7, "name": "game/laptop" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/dragon heh heh got em" }
+		]
+	},
+	"groxar": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/groxar" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10.0667, "name": "game/they've made a jam game before" },
+			{ "time": 20.0333, "name": "game/they're part of the jam staff" },
+			{ "time": 30.0333, "name": "game/groxar" }
+		]
+	},
+	"icefill": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/icefill" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they're a developer of a very popular game" },
+			{ "time": 10, "name": "game/has not submitted a jam game before" },
+			{ "time": 20, "name": "game/works with roguelike games" },
+			{ "time": 30.0333, "name": "game/icefill" }
+		]
+	},
+	"james": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/james" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/has not submitted a jam game before" },
+			{ "time": 10.0333, "name": "game/looks blue" },
+			{ "time": 20.0333, "name": "game/a jam protester" },
+			{ "time": 30.0333, "name": "game/james" }
+		]
+	},
+	"john": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/john" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/doesn't look like a person" },
+			{ "time": 10, "name": "game/they're part of the jam staff" },
+			{ "time": 20, "name": "game/runs the whole show" },
+			{ "time": 30.0333, "name": "game/john" }
+		]
+	},
+	"login94": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/login94" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like a person" },
+			{ "time": 10, "name": "game/has not submitted a jam game before" },
+			{ "time": 20, "name": "game/develops a level editor" },
+			{ "time": 30.0333, "name": "game/login94" }
+		]
+	},
+	"lyze": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/lyze" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10, "name": "game/they've made a jam game before" },
+			{ "time": 20, "name": "game/they're a developer of a very popular game" },
+			{ "time": 30.0333, "name": "game/lyze" }
+		]
+	},
+	"mgsx": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/mgsx" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/a regular member of the discord server" },
+			{ "time": 10.0333, "name": "game/they've made a jam game before" },
+			{ "time": 20.0333, "name": "game/they're an expert with 3d" },
+			{ "time": 30.0333, "name": "game/mgsx" }
+		]
+	},
+	"mr00anderson": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/mr00anderson" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they're a streamer" },
+			{ "time": 10.0333, "name": "game/they've made a jam game before" },
+			{ "time": 20.0333, "name": "game/has a beard" },
+			{ "time": 30.0333, "name": "game/mr00anderson" }
+		]
+	},
+	"mrstahlfelge": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/mrstahlfelge" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they've made a jam game before" },
+			{ "time": 10, "name": "game/they're part of the jam staff" },
+			{ "time": 20, "name": "game/they're a developer of a very popular game" },
+			{ "time": 30.0333, "name": "game/mrstahlfelge" }
+		]
+	},
+	"myke": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/myke" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10, "name": "game/they make music" },
+			{ "time": 20, "name": "game/wants to make a profitible game" },
+			{ "time": 30.0333, "name": "game/myke" }
+		]
+	},
+	"nitten": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/nitten" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/has not submitted a jam game before" },
+			{ "time": 10, "name": "game/they're very strong" },
+			{ "time": 20, "name": "game/currently developing a game" },
+			{ "time": 30.0333, "name": "game/nitten" }
+		]
+	},
+	"payne": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/payne" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/has not submitted a jam game before" },
+			{ "time": 10, "name": "game/works on a famr" },
+			{ "time": 20, "name": "game/obsessed with pies" },
+			{ "time": 30.0333, "name": "game/payne" }
+		]
+	},
+	"peanut-panda": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/peanut-panda" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10, "name": "game/they're part of the jam staff" },
+			{ "time": 20, "name": "game/eats chutes and leaves" },
+			{ "time": 30.0333, "name": "game/peanut panda" }
+		]
+	},
+	"pilzhere": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/pilzhere" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like a person" },
+			{ "time": 10, "name": "game/they've made a jam game before" },
+			{ "time": 20, "name": "game/made a mode 7 shooter game before" },
+			{ "time": 30.0333, "name": "game/pilzhere" }
+		]
+	},
+	"raeleus": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/raeleus" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/looks like an animal" },
+			{ "time": 10, "name": "game/they're part of the jam staff" },
+			{ "time": 20, "name": "game/he declares himself the winner all the time" },
+			{ "time": 30.0333, "name": "game/raeleus" }
+		]
+	},
+	"raseya": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/raseya" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they're a streamer" },
+			{ "time": 10, "name": "game/an artist" },
+			{ "time": 20, "name": "game/looks like a maid" },
+			{ "time": 30.0333, "name": "game/raseya" }
+		]
+	},
+	"red-sponge": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/red-sponge" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/doesn't look like a person" },
+			{ "time": 10, "name": "game/they've made a jam game before" },
+			{ "time": 20, "name": "game/made out of a spongy porous material" },
+			{ "time": 30.0333, "name": "game/red sponge" }
+		]
+	},
+	"s64kbstudio": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/64kb.studio" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/doesn't look like a person" },
+			{ "time": 10, "name": "game/they make music" },
+			{ "time": 20, "name": "game/they've made a jam game before" },
+			{ "time": 30.0333, "name": "game/64kbstudio" }
+		]
+	},
+	"santorno": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/santorno" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they've made a jam game before" },
+			{ "time": 10.0333, "name": "game/has a beard" },
+			{ "time": 20.0333, "name": "game/goes to college" },
+			{ "time": 30.0333, "name": "game/santorno" }
+		]
+	},
+	"start": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 22.3667, "name": null }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/dragon fuck why can't I just have a normal dream" },
+			{ "time": 3.4667, "name": "game/agent dragonne come in" },
+			{ "time": 11.5667, "name": "game/dragon copy how many targets this time" },
+			{ "time": 14.2333, "name": "game/just one" },
+			{ "time": 16.2, "name": "game/wait new mission objective standby we are awiting the description" }
+		]
+	},
+	"tecksup": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/tecksup" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/they've made a jam game before" },
+			{ "time": 10, "name": "game/doesn't look like a person" },
+			{ "time": 20, "name": "game/looks like a cube" },
+			{ "time": 30.0333, "name": "game/tecksup" }
+		]
+	},
+	"tettinger": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/tettinger" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/has a cat" },
+			{ "time": 10, "name": "game/works with roguelike games" },
+			{ "time": 20, "name": "game/has a crazy commit streak" },
+			{ "time": 30.0333, "name": "game/tettinger" }
+		]
+	},
+	"wrong": {
+		"slots": {
+			"game/laptop": {
+				"attachment": [
+					{ "time": 3.5667, "name": "game/laptop" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/wrong target what the hell is wrong with you" }
+		]
+	},
+	"zaida": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/zaida" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/has a cat" },
+			{ "time": 10, "name": "game/they've made a jam game before" },
+			{ "time": 20, "name": "game/female" },
+			{ "time": 30.0333, "name": "game/zaida" }
+		]
+	},
+	"zeroed": {
+		"slots": {
+			"icon": {
+				"attachment": [
+					{ "time": 30.0333, "name": "game/zeroed" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "game/doesn't look like a person" },
+			{ "time": 10, "name": "game/they've made a jam game before" },
+			{ "time": 20, "name": "game/made a tower defense clicker game" },
+			{ "time": 30.0333, "name": "game/zeroed" }
+		]
+	}
+}
+}

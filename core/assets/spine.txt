@@ -1,6 +1,8 @@
-spine/enemy.json
 spine/introduction.json
+spine/laptop.json
 spine/libgdx.json
-spine/player.json
+spine/person.json
 spine/raseya-logo.json
 spine/ray3k.json
+spine/room.json
+spine/scope.json

@@ -4,12 +4,8 @@ import com.badlogic.gdx.math.Vector2;
 import com.dongbat.jbump.CollisionFilter;
 import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Item;
-import com.dongbat.jbump.Rect;
 import com.dongbat.jbump.Response.Result;
 import com.esotericsoftware.spine.*;
-import com.ray3k.template.*;
-
-import java.lang.reflect.Array;
 
 import static com.ray3k.template.Core.*;
 

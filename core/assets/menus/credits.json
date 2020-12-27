@@ -11,7 +11,7 @@
 						"clazz": "com.badlogic.gdx.scenes.scene2d.ui.Label",
 						"name": "default"
 					},
-					"text": "This game was made by Raeleus.\\nCopyright Raymond \"Raeleus\" Buckley © 2020\\n\\nArtwork and additional design by Raseya\\nhttps://raseya.carrd.co/\\n\\nPixelmix font created by\\nAndrew Tyler www.AndrewTyler.net and font@andrewtyler.net",
+					"text": "This game was made by Raeleus.\\nCopyright Raymond \"Raeleus\" Buckley © 2020\\n\\nAdditional design by Dragon Queen\\n\\nTyrant by Kevin MacLeod\\nLink: https://incompetech.filmmusic.io/song/5031-tyrant\\nLicense: https://filmmusic.io/standard-license\\n\\nUndaunted by Kevin MacLeod\\nLink: https://incompetech.filmmusic.io/song/4561-undaunted\\nLicense: https://filmmusic.io/standard-license ",
 					"textAlignment": 1,
 					"ellipsis": false,
 					"ellipsisString": "...",

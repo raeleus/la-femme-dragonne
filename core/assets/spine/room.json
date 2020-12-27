@@ -1,0 +1,31 @@
+{
+"skeleton": {
+	"hash": "bJS26KoTCWRCkqcp7zKmgvrRhwU",
+	"spine": "3.8.99",
+	"x": -86,
+	"y": -25,
+	"width": 172,
+	"height": 50,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "room", "bone": "root", "attachment": "game/herring1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"room": {
+				"game/herring1": { "width": 172, "height": 50 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

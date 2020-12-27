@@ -41,7 +41,7 @@ public class HtmlLauncher extends GwtApplication implements CrossPlatformWorker 
         int w = Window.getClientWidth() - PADDING;
         int h = Window.getClientHeight() - PADDING;
         cfg = new GwtApplicationConfiguration(w, h);
-        cfg.antialiasing = false;
+        cfg.antialiasing = true;
         cfg.fullscreenOrientation = GwtGraphics.OrientationLockType.LANDSCAPE;
         Window.enableScrolling(false);
         Window.setMargin("0");

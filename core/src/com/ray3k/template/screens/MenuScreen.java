@@ -1,6 +1,7 @@
 package com.ray3k.template.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -8,6 +9,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
 
@@ -38,6 +40,11 @@ public class MenuScreen extends JamScreen {
         textButton.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
+                GameScreen.firstRun = true;
+                GameScreen.fluidList = new Array<>(GameScreen.skinNames);
+                GameScreen.fluidList.shuffle();
+                GameScreen.numberOfEnemies = 5;
+                GameScreen.neededWins = 5;
                 Gdx.input.setInputProcessor(null);
                 bgm.stop();
                 core.transition(new IntroductionScreen());

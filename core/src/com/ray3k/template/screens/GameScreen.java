@@ -6,9 +6,7 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.RandomXS128;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -19,18 +17,16 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
 import com.crashinvaders.vfx.effects.ChainVfxEffect;
-import com.crashinvaders.vfx.framebuffer.VfxFrameBuffer;
 import com.ray3k.template.*;
 import com.ray3k.template.OgmoReader.*;
 import com.ray3k.template.entities.*;
-import com.ray3k.template.entities.JumpeableEntity.*;
 import com.ray3k.template.screens.DialogPause.*;
 import com.ray3k.template.vfx.*;
 import space.earlygrey.shapedrawer.ShapeDrawer;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 
 public class GameScreen extends JamScreen {
     public static GameScreen gameScreen;
@@ -40,17 +36,31 @@ public class GameScreen extends JamScreen {
     public boolean paused;
     private ChainVfxEffect vfxEffect;
     private Label fpsLabel;
-    private VfxFrameBuffer vfxFrameBuffer;
-    public static Viewport innerViewport;
     public static final int WORLD_WIDTH = 1024;
     public static final int WORLD_HEIGHT = 576;
-    public static RandomXS128 random = new RandomXS128();
-    public static ObjectMap<String, Triggerable> triggerables;
+    public static final Array<EnemyEntity> enemies = new Array<>();
+    public static final Array<String> skinNames = new Array<>(new String[] {"adrien", "ali", "bear", "bobishere",
+            "cackling", "cococore", "cosmicmenace", "doge", "dragun-queen", "groxar", "icefill", "james",
+            "john", "login94", "lyze", "mgsx", "mr00anderson", "mrstahlfelge", "myke", "nitten", "payne",
+            "peanut-panda", "pilzhere", "raeleus", "raseya", "red-sponge", "s64kbstudio", "santorno",
+            "tecksup", "tettinger", "zaida", "zeroed"});
+    public static Array<String> fluidList;
+    public static String target;
+    public static boolean firstRun;
+    public static LaptopEntity laptop;
+    public static boolean trans;
+    public static int numberOfEnemies;
+    public static int neededWins;
+    public static PumpkinEntity pumpkinEntity;
     
     @Override
     public void show() {
         super.show();
     
+        bgm_game.setVolume(bgm);
+        bgm_game.play();
+        
+        trans = false;
         gameScreen = this;
         vfxEffect = new GlitchEffect();
         BG_COLOR.set(Color.valueOf("756e86"));
@@ -98,23 +108,24 @@ public class GameScreen extends JamScreen {
         InputMultiplexer inputMultiplexer = new InputMultiplexer(stage, this);
         Gdx.input.setInputProcessor(inputMultiplexer);
     
-        viewport = new FitViewport(WORLD_WIDTH, WORLD_HEIGHT);
         camera = new OrthographicCamera();
-        camera.zoom = .8f;
-        innerViewport = new FitViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
-        innerViewport.update(WORLD_WIDTH, WORLD_HEIGHT);
-    
-        vfxFrameBuffer = new VfxFrameBuffer(Format.RGB888);
-        vfxFrameBuffer.initialize(WORLD_WIDTH, WORLD_HEIGHT);
-        vfxManager.resize(WORLD_WIDTH, WORLD_HEIGHT);
+        camera.zoom = 1f;
+        camera.position.set(WORLD_WIDTH / 2f, WORLD_HEIGHT / 2f, 0);
+        viewport = new FitViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
         
         entityController.clear();
+        enemies.clear();
         
-        triggerables = new ObjectMap<>();
+        entityController.add(new CameraEntity());
+        entityController.add(new ScopeEntity());
         
+        var skins = new Array<>(fluidList);
+        skins.setSize(Math.min(skins.size, numberOfEnemies));
+        var spawns = new Array<Vector2>();
+        skins.shuffle();
+        target = skins.peek();
         var reader = new OgmoReader();
         reader.addListener(new OgmoAdapter() {
-            int ordinal;
             String layer;
     
             @Override
@@ -127,81 +138,15 @@ public class GameScreen extends JamScreen {
                                boolean flippedY, int originX, int originY, int rotation, Array<EntityNode> nodes,
                                ObjectMap<String, OgmoValue> valuesMap) {
                 switch (name) {
-                    case "player":
-                        var player = new PlayerEntity();
-                        player.setPosition(x, y);
-                        entityController.add(player);
-                        player.updateCollisionBox();
+                    case "spawn":
+                        spawns.add(new Vector2(x, y));
                         break;
-                    case "wall":
-                        var wall = new WallEntity(width, height);
-                        wall.setPosition(x, y);
-                        entityController.add(wall);
-                        wall.updateCollisionBox();
-                        break;
-                    case "pit":
-                        var pit = new PitEntity(width, height);
-                        pit.setPosition(x, y);
-                        entityController.add(pit);
-                        pit.updateCollisionBox();
-                        break;
-                    case "random-enemy":
-                        var enemy = new RandomEnemyEntity(ordinal);
-                        ordinal++;
-                        enemy.setPosition(x, y);
-                        entityController.add(enemy);
-                        enemy.updateCollisionBox();
-                        break;
-                    case "dog-enemy":
-                        var dog = new DogEnemyEntity(ordinal);
-                        ordinal++;
-                        dog.setPosition(x, y);
-                        entityController.add(dog);
-                        dog.updateCollisionBox();
-                        break;
-                    case "slideable-obstacle":
-                        var slideable = new SlideableEntity(width, height);
-                        slideable.setPosition(x, y);
-                        entityController.add(slideable);
-                        slideable.updateCollisionBox();
-                        break;
-                    case "jumpeable-obstacle":
-                        JumpDirection jumpDirection;
-                        var value = valuesMap.get("jump-direction").asString();
-                        switch (value) {
-                            case "north":
-                                jumpDirection = JumpDirection.NORTH;
-                                break;
-                            case "south":
-                                jumpDirection = JumpDirection.SOUTH;
-                                break;
-                            case "east":
-                                jumpDirection = JumpDirection.EAST;
-                                break;
-                            case "west":
-                                jumpDirection = JumpDirection.WEST;
-                                break;
-                            default:
-                                jumpDirection = JumpDirection.ALL;
-                                break;
-                        }
-                        var jumpeable = new JumpeableEntity(width, height, jumpDirection);
-                        jumpeable.setPosition(x, y);
-                        entityController.add(jumpeable);
-                        jumpeable.updateCollisionBox();
-                        break;
-                    case "disappearing-obstacle":
-                        var disappearing = new DisappearingWallEntity(width, height, valuesMap.get("triggerName").asString(), valuesMap.get("range").asInt());
-                        disappearing.setPosition(x, y);
-                        entityController.add(disappearing);
-                        disappearing.updateCollisionBox();
-                        triggerables.put(disappearing.triggerName, disappearing);
-                        break;
-                    case "button":
-                        var button = new ButtonEntity(width, height, valuesMap.get("triggerName").asString());
-                        button.setPosition(x, y);
-                        entityController.add(button);
-                        button.updateCollisionBox();
+                    case "pumpkin":
+                        pumpkinEntity = new PumpkinEntity();
+                        pumpkinEntity.setPosition(x, y);
+                        pumpkinEntity.width = width;
+                        pumpkinEntity.height = height;
+                        entityController.add(pumpkinEntity);
                         break;
                 }
             }
@@ -209,14 +154,41 @@ public class GameScreen extends JamScreen {
             @Override
             public void decal(int centerX, int centerY, float scaleX, float scaleY, int rotation, String texture,
                               String folder) {
-                if (!layer.equals("template")) {
-                    var name = Utils.filePathNoExtension(texture);
-                    var decalEntity = new DecalEntity(centerX, centerY, name);
-                    entityController.add(decalEntity);
+
+                var name = Utils.filePathNoExtension(texture);
+                var decalEntity = new DecalEntity(centerX, centerY, scaleX, scaleY, name);
+                if (name.equals("game/laptop")) {
+                    laptop = new LaptopEntity();
+                    laptop.setPosition(centerX, centerY);
+                    laptop.depth = FOREGROUND_DEPTH;
+                    entityController.add(laptop);
+                } else switch (layer) {
+                    case "background":
+                        decalEntity.depth = BACKGROUND_DEPTH;
+                        break;
+                    case "midground":
+                        decalEntity.depth = MIDGROUND_DEPTH;
+                        break;
+                    case "foreground":
+                        decalEntity.depth = FOREGROUND_DEPTH;
+                        break;
                 }
+                entityController.add(decalEntity);
             }
         });
-        reader.readFile(Gdx.files.internal("levels/level-1.json"));
+        reader.readFile(Gdx.files.internal("levels/level.json"));
+        
+        spawns.shuffle();
+        for (var spawn : spawns) {
+            if (skins.size > 0) {
+                var enemy = new EnemyEntity();
+                enemy.setPosition(spawn.x, spawn.y - 25);
+                enemy.depth = ENEMY_DEPTH;
+                entityController.add(enemy);
+                enemy.skeleton.setSkin(skins.pop());
+                enemies.add(enemy);
+            } else break;
+        }
     }
     
     @Override
@@ -228,35 +200,27 @@ public class GameScreen extends JamScreen {
         stage.act(delta);
         
         fpsLabel.setText(Gdx.graphics.getFramesPerSecond());
+        if (trans) {
+            core.transition(new IntroductionScreen());
+        }
     }
     
     @Override
     public void draw(float delta) {
         batch.setBlendFunction(GL20.GL_ONE, GL20.GL_ONE_MINUS_SRC_ALPHA);
         batch.setColor(Color.WHITE);
-        batch.begin();
         vfxManager.cleanUpBuffers();
         vfxManager.beginInputCapture();
         Gdx.gl.glClearColor(BG_COLOR.r, BG_COLOR.g, BG_COLOR.b, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        innerViewport.apply();
+        batch.begin();
+        viewport.apply();
         batch.setProjectionMatrix(camera.combined);
         entityController.draw(paused ? 0 : delta);
         batch.end();
         vfxManager.endInputCapture();
         vfxManager.applyEffects();
-        vfxManager.renderToFbo(vfxFrameBuffer);
-
-        batch.begin();
-        viewport.apply();
-        batch.setProjectionMatrix(viewport.getCamera().combined);
-        Gdx.gl.glClearColor(Color.PURPLE.r, Color.PURPLE.g, Color.PURPLE.b, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        var region = new TextureRegion(vfxFrameBuffer.getTexture());
-        region.flip(false, true);
-        batch.draw(region, 0, 0);
-        batch.end();
-        batch.disableBlending();
+        vfxManager.renderToScreen();
         
         batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         stage.getViewport().apply();
@@ -266,7 +230,8 @@ public class GameScreen extends JamScreen {
     @Override
     public void resize(int width, int height) {
         if (width + height != 0) {
-            viewport.update(width, height, true);
+            vfxManager.resize(width, height);
+            viewport.update(width, height);
             stage.getViewport().update(width, height, true);
         }
     }
@@ -274,7 +239,6 @@ public class GameScreen extends JamScreen {
     @Override
     public void dispose() {
         vfxEffect.dispose();
-        vfxFrameBuffer.dispose();
     }
     
     @Override
@@ -283,6 +247,6 @@ public class GameScreen extends JamScreen {
         vfxManager.removeAllEffects();
         vfxEffect.dispose();
         entityController.dispose();
-        vfxFrameBuffer.dispose();
+        bgm_game.stop();
     }
 }
